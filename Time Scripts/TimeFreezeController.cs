@@ -8,8 +8,9 @@ using System.Collections;
 /// Last Edited by: Mauricio Galvez
 /// Last Edited Date: May 14/15
 /// </summary>
-public class TimeFreezeController : MonoBehaviour 
+public class TimeFreezeController : Singleton<TimeFreezeController> 
 {
+   protected TimeFreezeController() { }             // Guarantee this will always be a singleton only - can't use the constructor!
    /// ================
    /// EDITOR PROPERTIES
    /// ================

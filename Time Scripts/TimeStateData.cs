@@ -7,8 +7,9 @@ using System.Collections;
 /// Last Edited by: Mauricio Galvez
 /// Last Edited Date: May 13/15
 /// </summary>
-public class TimeStateData : MonoBehaviour
+public class TimeStateData : Singleton<TimeStateData>
 {
+   protected TimeStateData() { }  // Guarantee there's only one instance of these created.
    /// ==============
    /// PROPERTIES
    /// ==============

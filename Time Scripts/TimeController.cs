@@ -5,10 +5,11 @@ using System.Collections;
 /// Author: Mauricio Galvez
 /// Created: May 13/15
 /// Last Edited by: Mauricio Galvez
-/// Last Edited Date: May 13/15
+/// Last Edited Date: May 15/15
 /// </summary>
-public class TimeController : MonoBehaviour 
+public class TimeController : Singleton<TimeController>
 {
+   protected TimeController() { }               // Guarantee that this will be a singleton!
    /// ==================
    /// EDITOR PROPERTIES
    /// ==================
